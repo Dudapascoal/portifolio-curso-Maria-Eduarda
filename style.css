@@ -1,0 +1,456 @@
+*{margin:0;padding:0;}
+hr{
+    display: block;/*Não permite movimentação da linha*/
+    margin-top: 0em;/*Espaçamento entre o topo da margem*/
+    margin-bottom: 0.5em;/*Espaçamento entre a parte de baixo*/
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);/*cor da borda*/
+}
+header {
+  background-color: rgb(93, 188, 122);
+  display: flex;
+  flex-direction: column; /* Alinha os itens verticalmente */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center; /* Garante que o texto estará centralizado */
+  color: rgb(0, 0, 0);
+}
+
+header .title-container {
+  display: flex;
+  flex-direction: column; /* Alinha o nome e a frase verticalmente */
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  width: 80px; /* Tamanho da imagem */
+  height: 80px; /* Tamanho da imagem */
+  border-radius: 50%; /* Torna a imagem redonda */
+  object-fit: cover; /* Faz com que a imagem não distorça */
+  margin-bottom: 10px; /* Espaço entre a imagem e o nome */
+}
+
+header h1 {
+  font-size: 2em; /* Tamanho do nome */
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header h2 {
+  font-size: 0.9em; /* Tamanho menor para a frase */
+  margin-top: 5px;
+  opacity: 0.8; /* Deixa a frase um pouco mais suave */
+}
+
+.genre-buttons {
+  display: flex;
+  gap: 15px;
+  padding: 30px;
+  background-color: #000000;
+  
+}
+
+.genre-buttons button {
+  background-color: #3f3f3f;
+  color: white;
+  border: none;
+  padding: 20px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 0px 5px rgb(255, 255, 255);
+  
+}
+
+
+.h1-informação{
+  text-align: left; /* Garante que o texto estará centralizado */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(93, 188, 122);
+  margin-left: 35px;
+}
+
+body{
+  background-color: #000000;
+}
+
+.sesi img{
+  width: 200px; /* Tamanho da imagem */
+  height: 90px; /* Tamanho da imagem */
+  margin-bottom: 10px; /* Espaço entre a imagem e o nome */
+  margin-left: 30px;
+}
+
+.sesi{
+  display: flex;
+  align-items: center;
+}
+
+.sesi p{
+  color:white;
+  font-size: 20px;
+  padding: 20px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.sesi ul{
+  color:white;
+  font-size: 20px;
+  padding: 20px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.lil{
+  display: flex;
+  gap: 10px;
+}
+.fil img{
+  width: 200px;
+  height: 100px;
+  
+}
+.item2{
+  padding: 25px; 
+  
+}
+.item2 img {
+  width: 250px;
+  height: 350px;
+  object-fit: cover; /* Faz a imagem se ajustar ao tamanho sem deformar */
+  padding: 2px;
+  border: 2px solid rgb(93, 188, 122);
+  border-radius: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+  box-shadow: 0px 0px 15px rgb(186, 186, 186);
+}
+
+/* Efeito ao passar o mouse sobre a imagem */
+.item2 img:hover {
+  filter: brightness(0.85); /* Escurece levemente a imagem */
+  transform: scale(1.05); /* Aumenta ligeiramente a imagem */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
+}
+
+/* Efeito no contêiner ao passar o mouse */
+.item3:hover {
+  transform: scale(1.05); /* Aumenta o contêiner ligeiramente */
+}
+
+.lil2{
+  display: flex;
+  gap: 10px;
+}
+.fil2 img{
+  width: 200px;
+  height: 100px;
+  
+}
+.item3{
+  padding: 25px; 
+  
+}
+.item3 img {
+  width: 365px;
+  height: 250px;
+  object-fit: cover; /* Faz a imagem se ajustar ao tamanho sem deformar */
+  padding: 2px;
+  border: 2px solid  rgb(134, 200, 231);
+  border-radius: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+  box-shadow: 0px 0px 15px rgb(186, 186, 186);
+}
+
+/* Efeito ao passar o mouse sobre a imagem */
+.item3 img:hover {
+  filter: brightness(0.85); /* Escurece levemente a imagem */
+  transform: scale(1.05); /* Aumenta ligeiramente a imagem */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
+}
+
+/* Efeito no contêiner ao passar o mouse */
+.item3:hover {
+  transform: scale(1.05); /* Aumenta o contêiner ligeiramente */
+}
+
+.categorias {
+  text-align: center; /* Garante que o texto estará centralizado */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(93, 188, 122);
+  margin-left: 35px;
+}
+/* Layout de cursos e projetos */
+.cursos-container, .projetos-container {
+  justify-content: center;
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* Estilos para cada curso e projeto */
+.curso, .projeto {
+  display: flex;
+  flex: 1;
+  min-width: 300px;
+  max-width: 300px;
+  background-color: #9bff8e;
+  border-radius: 9px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 15px;
+  flex-direction: column; /* Faz com que o conteúdo (imagem + texto) fiquem em coluna */
+}
+
+/* Estilos para a imagem dos cursos e projetos */
+.curso-img, .projeto-img {
+  width: 100%; /* Faz com que a imagem ocupe 100% da largura do container */
+  height: 200px; /* Ajusta a altura da imagem para que ela ocupe o quadrado */
+  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+  border-radius: 8px; /* Bordas arredondadas para as imagens */
+  transition: transform 0.3s ease; /* Suaviza o efeito de aumento */
+}
+
+.curso-img:hover, .projeto-img:hover {
+  transform: scale(1.1); /* Aumenta a imagem 10% ao passar o mouse */
+}
+
+/* Estilos para o texto de cursos e projetos */
+.curso-texto, .projeto-texto {
+  flex-grow: 1; /* Faz com que o texto ocupe o restante do espaço disponível */
+  padding-top: 15px; /* Espaço entre a imagem e o texto */
+}
+
+/* Títulos dos cursos e projetos */
+.curso h3, .projeto h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+  background-color: #87e3e3;
+  padding: 5px;
+  border-radius: 5px; /* Bordas arredondadas para o título */
+}
+
+.lil3{
+  display: flex;
+  gap: 10px;
+}
+.fil3 img{
+  width: 400px;
+  height: 300px;
+  
+}
+.item4{
+  padding: 25px; 
+  
+}
+.item4 img {
+  width: 360px;
+  height: 200px;
+  object-fit: cover; /* Faz a imagem se ajustar ao tamanho sem deformar */
+  padding: 2px;
+  border: 2px solid  rgb(134, 200, 231);
+  border-radius: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+  box-shadow: 0px 0px 15px rgb(186, 186, 186);
+}
+
+/* Efeito ao passar o mouse sobre a imagem */
+.item4 img:hover {
+  filter: brightness(0.85); /* Escurece levemente a imagem */
+  transform: scale(1.05); /* Aumenta ligeiramente a imagem */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
+}
+
+/* Efeito no contêiner ao passar o mouse */
+.item4:hover {
+  transform: scale(1.05); /* Aumenta o contêiner ligeiramente */
+}
+
+.lil4{
+  display: flex;
+  gap: 10px;
+}
+.fil4 img{
+  width: 400px;
+  height: 300px;
+  
+}
+.item5{
+  padding: 25px; 
+  
+}
+.item5 img {
+  width: 185px;
+  height: 200px;
+  object-fit: cover; /* Faz a imagem se ajustar ao tamanho sem deformar */
+  padding: 2px;
+  border: 2px solid  rgb(134, 200, 231);
+  border-radius: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+  box-shadow: 0px 0px 15px rgb(186, 186, 186);
+}
+
+/* Efeito ao passar o mouse sobre a imagem */
+.item5 img:hover {
+  filter: brightness(0.85); /* Escurece levemente a imagem */
+  transform: scale(1.05); /* Aumenta ligeiramente a imagem */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
+}
+
+/* Efeito no contêiner ao passar o mouse */
+.item5:hover {
+  transform: scale(1.05); /* Aumenta o contêiner ligeiramente */
+}
+/* Estilos do Rodapé */
+.footer {
+  background-color: #141414;
+  color: #f1f1f1;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas menores */
+}
+
+.footer-section {
+  flex: 1;
+  margin: 20px;
+}
+
+.footer-section h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #bbbbbb;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #bbbbbb;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+  color: plum;
+  text-decoration: underline;
+}
+
+.footer-section .social-links a {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.footer-section .social-links img {
+  width: 32px;
+  height: 32px;
+}
+
+.footer-bottom {
+  background-color: #101010;
+  color: #bbbbbb;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  margin-top: 20px;
+  border-top: 1px solid #222;
+}
+
+/* Estilos do Rodapé */
+.footer {
+  background-color: #141414;
+  color: #f1f1f1;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas menores */
+}
+
+.footer-section {
+  flex: 1;
+  margin: 20px;
+}
+
+.footer-section h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #bbbbbb;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #bbbbbb;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+  color: plum;
+  text-decoration: underline;
+}
+
+.footer-section .social-links a {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.footer-section .social-links img {
+  width: 32px;
+  height: 32px;
+}
+
+.footer-bottom {
+  background-color: #101010;
+  color: #bbbbbb;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  margin-top: 20px;
+  border-top: 1px solid #222;
+}
